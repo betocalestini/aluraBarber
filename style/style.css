@@ -1,0 +1,179 @@
+header {
+  background: #bbbbbb;
+  padding: 10px 0;
+  width: 100%;
+}
+.caixaInicial {
+    position: relative;
+    width: 940px;
+    margin: 0 auto;
+    /* align-items: center; */
+    /* justify-content: center; */
+}
+
+nav {
+    position: absolute;
+    top: 110px;
+    left: 30%;
+    width: 70%;
+}
+nav li{
+    display: inline;
+    margin: 0 0 0 5%;
+}
+ul {
+    padding-left: 0;
+
+}
+
+nav a {
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: 800;
+    font-size: 2rem;
+    text-decoration: none;
+}
+nav a:hover {
+    color: #C78c19;
+    text-decoration:underline;
+    transition-delay: 2ms;
+}
+.produtos {
+    width: 940px;
+    margin: 0 auto;
+}
+
+.produtos li{
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    padding: 30px 20px;
+    margin: 0 1.5%;
+    box-sizing: border-box;
+    /* border-color: #000000;
+    /* border-width: 5px;
+    border-style: double; */
+    /* isso tudo é igual a */
+    border: 3px solid #000000;
+     border-radius: 10px;  
+     background-color: #ffffff;
+}
+
+.produtos li:hover {
+    border-color:#C78c19;
+    transform: scale(1.2);
+}
+
+.produtos li:hover h2 {
+    font-size: 2.2rem;
+}
+
+.produtos li:active {
+    border-color: #088c19;
+}
+
+.produtos h2 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.description {
+  font-size: 1.2rem;  
+}
+.produto-preco {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 10px 0 0 0;
+}
+
+footer {
+    background: url(../imagens/bg.jpg);
+    text-align: center;
+    padding: 40px 0;
+}
+
+.copyright {
+    color:  #bbbbbb;
+    font-size: 1.2rem;
+}
+
+main {
+    width: 940px;
+    margin: 0 auto;
+}
+
+form {
+    margin: 40px 0;
+}
+
+form label, form legend {
+    display: block;
+    font-size: 1.5rem;
+    margin: 10px 20%;
+    /* width: 50%; */
+    
+}
+
+.input-padrao {
+    display: block;
+    font-size: 1.5rem;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px 25px;
+    width: 50%;
+    margin: 10px 20%;
+}
+
+.checkbox {
+    margin: 20px 0;
+}
+
+.select {
+    margin-top: 20px;
+}
+
+.select select {
+    display: block;
+    font-size: 1.5rem;
+    margin: 20px 20%;
+}
+
+.enviar {
+    display: block;
+    font-size: 1.5rem;
+    padding: 10px 25px;
+    width: 520px;
+    margin: 10px 20%;
+    border: none;
+    border-radius: 10px;
+    color: #ffffffff;
+    font-weight: bold;
+    background: #522500;
+    transition: 500ms;
+    cursor: pointer;
+}
+
+.enviar:hover {
+    background: #C78c19;
+    transform: scale(1.05);
+}
+
+table {
+    margin: 20px 0 40px;
+    width: 520px;
+    margin: 0 20% 20px;
+}
+
+thead {
+    background: #555555;
+    color: white;font-weight: bold;
+    font-size:2rem;   
+}
+
+td, th {
+    border: 1px solid #000000;
+    font-size:2rem;  
+    text-align: center;
+    
+}
