@@ -1,8 +1,16 @@
-header {
-  background: #bbbbbb;
-  padding: 10px 0;
-  width: 100%;
+
+html {
+    font-family: 'Montserrat', sans-serif;
 }
+/*------------------------CSS header-------------------------- */
+
+header {
+    background: linear-gradient(#bbbbbb, #fefefe);
+    padding: 10px 0;
+    width: 100%;
+    box-shadow: inset 0 0 200px #000000;
+}
+
 .caixaInicial {
     position: relative;
     width: 940px;
@@ -17,13 +25,14 @@ nav {
     left: 30%;
     width: 70%;
 }
-nav li{
+
+nav li {
     display: inline;
     margin: 0 0 0 5%;
 }
+
 ul {
     padding-left: 0;
-
 }
 
 nav a {
@@ -33,17 +42,21 @@ nav a {
     font-size: 2rem;
     text-decoration: none;
 }
+
 nav a:hover {
     color: #C78c19;
-    text-decoration:underline;
+    text-decoration: underline;
     transition-delay: 2ms;
 }
+
+/*------------------------CSS pagina produtos------------------------- */
+
 .produtos {
     width: 940px;
     margin: 0 auto;
 }
 
-.produtos li{
+.produtos li {
     display: inline-block;
     text-align: center;
     width: 30%;
@@ -51,18 +64,18 @@ nav a:hover {
     padding: 30px 20px;
     margin: 0 1.5%;
     box-sizing: border-box;
-    /* border-color: #000000;
-    /* border-width: 5px;
-    border-style: double; */
-    /* isso tudo é igual a */
     border: 3px solid #000000;
-     border-radius: 10px;  
-     background-color: #ffffff;
+    border-radius: 50px;
+    background-color: #ffffff;
+    opacity: 0.2;
 }
 
 .produtos li:hover {
-    border-color:#C78c19;
+    border-color: #C78c19;
     transform: scale(1.2);
+    opacity: 1;
+    transition: 0.5s;
+    box-shadow: 10px 10px 30px 20px rgba(0, 0, 0, 0.5);
 }
 
 .produtos li:hover h2 {
@@ -79,8 +92,9 @@ nav a:hover {
 }
 
 .description {
-  font-size: 1.2rem;  
+    font-size: 1.2rem;
 }
+
 .produto-preco {
     font-size: 1.5rem;
     font-weight: bold;
@@ -94,25 +108,23 @@ footer {
 }
 
 .copyright {
-    color:  #bbbbbb;
+    color: #bbbbbb;
     font-size: 1.2rem;
 }
 
-main {
-    width: 940px;
-    margin: 0 auto;
-}
+/*------------------------CSS pagina contato-------------------------- */
 
 form {
     margin: 40px 0;
 }
 
-form label, form legend {
+form label,
+form legend {
     display: block;
     font-size: 1.5rem;
     margin: 10px 20%;
     /* width: 50%; */
-    
+
 }
 
 .input-padrao {
@@ -167,13 +179,229 @@ table {
 
 thead {
     background: #555555;
-    color: white;font-weight: bold;
-    font-size:2rem;   
+    color: white;
+    font-weight: bold;
+    font-size: 2rem;
 }
 
-td, th {
+td,
+th {
     border: 1px solid #000000;
-    font-size:2rem;  
+    font-size: 2rem;
     text-align: center;
-    
+
+}
+
+/*------------------------CSS pagina Inicial-------------------------- */
+.banner {
+    width: 100%;
+    height: 400px;
+    background: url(../imagens/banner.png);
+    background-position: center;
+}
+.principal {
+    padding: 3rem 0;
+    background: #fefefe;
+    width: 940px;
+    margin: 0 auto;
+}
+
+.titulo-principal {
+    text-align: center;
+    font-size: 2rem;
+    margin: 0 0 1rem;
+    clear: left;
+    /* text-shadow: 5px 5px 50px rgba(0,0,0);  */
+}
+
+.titulo-principal:first-letter {
+    font-weight: bold;
+}
+
+.principal p {
+    margin: 0 0 1rem;
+    line-height: 1.5rem;
+    text-align: justify;
+}
+
+.principal p:first-line {
+    text-indent: 2cm;
+}
+
+.principal strong {
+    font-weight: bold;
+}
+
+.principal em {
+    font-style: italic;
+}
+
+/*-----------------CSS pagina inicial - principal -------------------- */
+.utensilios {
+    width: 120px;
+    float: right;
+    margin: 0 0 5px 5px;
+    border-radius: 5px;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.mapa {
+    padding: 3rem 0;
+    background: linear-gradient(#fefefe, #bbbbbb);
+}
+
+.mapa-container {
+    width: 940px;
+    margin: 0 auto;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.mapa p {
+    margin: 0 0 2rem;
+    text-align: center;
+}
+
+/*-----------------CSS pagina inicial - beneficios-------------------- */
+.beneficios {
+    padding: 10rem 0;
+    background: linear-gradient(#bbbbbb, #888888);
+}
+
+.conteudo-beneficios {
+    width: 940px;
+    margin: 0 auto;
+}
+
+.lista-beneficios {
+    width: 40%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.imagem-beneficios {
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.5);
+    border-radius: 10px
+}
+
+.itens {
+    line-height: 4rem;
+    font-size: 1.5rem;
+}
+
+.itens:first-child {
+    font-weight: bold;
+}
+
+.itens:last-child {
+    font-weight: bold;
+}
+
+.itens:nth-child(2n) {
+    font-weight: bold;
+}
+
+.itens:before {
+    content: "\2714";
+}
+
+.imagem-beneficios {
+    width: 60%;
+}
+
+.video-container {
+    width: 940px;
+    margin: 2rem auto;
+    margin-top: 10rem;
+    /* box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.5); */
+}
+
+@media screen and (max-width: 480px) {
+
+    /*------------CSS Página principal -------------------------------*/
+    .caixaInicial,
+    .principal,
+    .conteudo-beneficios,
+    .mapa-container,
+    .video-container {
+        width: auto;
+    }
+
+    h1 {
+        text-align: center;
+        margin: 20px 0;
+    }
+
+    h1>img {
+        width: auto;
+        margin: 0;
+    }
+
+    nav {
+        position: static;
+        margin: 0;
+        width: 100%;
+        font-weight: 900;
+    }
+
+    nav ul {
+        text-align: center;
+    }
+
+    nav a {
+        font-size: 1rem;
+    }
+
+    .lista-beneficios,
+    .imagem-beneficios {
+        width: 100%;
+    }
+
+/*------------------------CSS pagina produtos------------------------- */
+.produtos {
+    width: 100%;
+    margin: 0 auto;
+}
+.produtos li {
+    display: block;
+    width: 60%;
+    height: 400px;
+    margin: 50px 20%;
+}
+
+/* .produtos {
+    width: 940px;
+    margin: 0 auto;
+}
+
+.produtos li {
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    padding: 30px 20px;
+    margin: 0 1.5%;
+    box-sizing: border-box;
+    border: 3px solid #000000;
+    border-radius: 50px;
+    background-color: #ffffff;
+    opacity: 0.2;
+} */
+
+/*------------------------CSS pagina contato-------------------------- */
+form label,
+    form legend,
+    .input-padrao {
+        width: 80vw;
+        margin: 20px auto;
+    }
+
+    .enviar {
+        width: 90vw;
+        margin: 20px auto;
+    }
+
+    table {
+        width: 90vw;
+        margin: 20px auto;
+    }
 }
